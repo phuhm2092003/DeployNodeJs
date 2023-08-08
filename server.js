@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 app.get('/users', (req, res) => {
-    res.send('Get use permission')
+    res.send('Get use permission - render.com')
 })
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
