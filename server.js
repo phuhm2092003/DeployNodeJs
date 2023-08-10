@@ -6,6 +6,7 @@ const locationDb = require('./database/locationDB.js')
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
+// Lấy danh sách
 app.get('/locations', (req, res) => {
     locationDb.getLocations((err, data) =>{
         if(err){
