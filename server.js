@@ -1,21 +1,21 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const locationDb = require('./database/locationDB.js')
+// const locationDb = require('./database/locationDB.js')
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
-app.get('/locations', (req, res) => {
-    locationDb.getLocations((err, data) =>{
-        if(err){
-            console.log(err)
-            return res.status(500)
-        }
+// app.get('/locations', (req, res) => {
+//     locationDb.getLocations((err, data) =>{
+//         if(err){
+//             console.log(err)
+//             return res.status(500)
+//         }
 
-        return res.json(data)
-    })
-})
+//         return res.json(data)
+//     })
+// })
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
