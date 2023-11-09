@@ -1,5 +1,6 @@
 const express = require('express')
 const exphbs = require('express-handlebars');
+const path = require('path');
 const app = express()
 const port = 3000
 app.engine('.hbs', exphbs.engine({ extname: '.hbs', defaultLayout: null}));
