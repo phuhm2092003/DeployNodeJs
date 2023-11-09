@@ -7,12 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phuhm2092003/DeployNodeJs.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phuhm2092003/DeployNodeJs/issues"
+  },
+  "homepage": "https://github.com/phuhm2092003/DeployNodeJs#readme",
   "dependencies": {
-    "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "express-handlebars": "^7.1.2",
-    "mysql": "^2.18.1"
+    "express-handlebars": "^7.1.2"
   }
 }
