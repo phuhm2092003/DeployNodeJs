@@ -9,7 +9,6 @@ app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
     res.render('index');
-    console.log("Tải trang index");    
 })
 
 app.listen(port, () => {
